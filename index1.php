@@ -20,12 +20,12 @@
     	echo $female[$f];
 }
 	    	?>
-	    <h4>Welcome, <?php echo $users->getuserinfo('nick_name'); ?></h4>
+	    <h4>Olá, <?php echo $users->getuserinfo('nick_name'); ?></h4>
 		<ul><div id="log">
-			<li>Last login <?php echo $time->ago($users->getuserinfo('last_login')); ?></li></div>
+			<li>Último Login <?php echo $time->ago($users->getuserinfo('last_login')); ?></li></div>
 		</ul>
-	    <a href="./settings" class="button">Edit Account</a>
-	    <?php if($users->getuserinfo('user_group') == 1){ echo '<a href="./admin" class="button button-primary">Admin Panel</a>'; };?>
+	    <a href="./settings" class="button">Editar conta</a>
+	    <?php if($users->getuserinfo('user_group') == 1){ echo '<a href="./admin" class="button button-primary">Admin Painel</a>'; };?>
 	    <a href="logout.php" class="button button-blank"><span class="entypo-logout"></span></a>
 	</div>
 </div>
@@ -36,16 +36,16 @@
     <div class="six columns">
 		<div class="section" id="new">
 		    <div class="entypo-list-add"></div>
-		    <b>Open New Ticket</b>
-		    <p>Create or view support tickets to receive responses from our team.</p>
+		    <b> Novo Ticket</b>
+		    <p>Crie ou visualize tíquetes de suporte para receber respostas de nossa equipe.</p>
 	    </div>
 	</div>
 	
     <div class="six columns">
 		<div class="section" id="current">
 			<div class="entypo-list"></div>
-		    <b>Current Tickets</b>
-		    <p>View and manage any tickets that may have responses from our team.</p>
+		    <b>Ingressos Atuais</b>
+		    <p>Visualize e gerencie todos os tíquetes que podem ter respostas de nossa equipe.</p>
 	    </div>
 	</div>
   </div>
@@ -54,10 +54,10 @@
 <table class="u-full-width">
   <thead>
     <tr>
-      <th>Subject</th>
+      <th>Assunto</th>
       <th>Status</th>
-      <th>Last Reply</th>
-      <th>Recent</th>
+      <th>Última Resposta</th>
+      <th>Recente</th>
     </tr>
   </thead>
   <tbody>
@@ -71,23 +71,23 @@
 	<form method="POST" id="create_ticket">
 		<div class="row">
 			<div class="columns six">
-				<label for="subject">Subject</label>
+				<label for="subject">Assunto</label>
 				<input type="text" placeholder="Subject" class="u-full-width" id="subject">
 			</div>
 			
 			<div class="columns six">
-				<label for="department">Department</label>
+				<label for="department">Departamento</label>
 				<select id="department" class="u-full-width">
-					<option disabled="disabled">Please select department</option>
+					<option disabled="disabled">Please selecione o departamento</option>
 					<?php $tickets->get_departments(); ?>
 				</select>
 			</div>
 		</div>
 		
-		<label for="subject">Message</label>
+		<label for="subject">Mensagem</label>
 		<textarea placeholder="Message" id="message" style="min-height:300px;" class="u-full-width"></textarea>
 		
-		<button type="submit" name="submit">Post Ticket</button>
+		<button type="submit" name="submit">Enviar</button>
 	</form>
 
 </div>

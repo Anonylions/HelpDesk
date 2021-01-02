@@ -1,9 +1,9 @@
 <?php
 
-$host = "remotemysql.com"; //Can be either an IP address or a hostname.
+$host = "localhost"; //Can be either an IP address or a hostname.
 $port ="3306"; //This is the default MySQL port, if you don't know what this is, please just leave it at its current value.
-$username = "jKRhAnyNm9";//Your MySQL username.
-$password = "ZFFEtJY37V";
+$username = "root";//Your MySQL username.
+$password = "janeiro12@";
 
 //The first user to register will be given administration rights automatically.
 //The database and tables will be created automatically when the page is loaded for the first time.
