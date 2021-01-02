@@ -18,24 +18,24 @@
 					<div class="nine columns">
 						<b><?php echo $users->getuserinfo('nick_name'); ?></b><br>
 						Administrator<br>
-						<a href="../index1.php"><span class="entypo-left-open"></span>User Panel</a>
+						<a href="../index1.php"><span class="entypo-left-open"></span>Painel de Usuário</a>
 					</div>
 				 </div>
 			</li>
 			<a href="./"><li<?php if($admin_menu_active == 'dashboard'){ echo ' class="active"'; } ?>>
-				Admin Dashboard
-				<p>Overview of site statistics</p>
+				Painel de controle
+				<p>Visão geral das estatísticas do site</p>
 			</li></a>
 			<a href="ticket_management.php"><li<?php if($admin_menu_active == 'ticket_management'){ echo ' class="active"'; } ?>>
-				Tickets Management
-				<p>View, answer and resolve tickets created.</p>
+				Gestão de Ingressos
+				<p>Ver, responder e resolver tickets criados.</p>
 			</li></a>
 			<a href="user_management.php"><li<?php if($admin_menu_active == 'user_management'){ echo ' class="active"'; } ?>>
-				User Management
-				<p>Monitor and modify user accounts</p>
+				Gestão de Usuários
+				<p>Monitore e modifique contas de usuário</p>
 			</li></a>
 			<a href="site_management.php"><li<?php if($admin_menu_active == 'site_management'){ echo ' class="active"'; } ?>>
-				Site Management
-				<p>Modify sites default settings</p>
+				Gerenciamento de site
+				<p>Modificar configurações padrão de sites </p>
 			</li></a>
 		</ul>

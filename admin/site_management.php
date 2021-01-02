@@ -12,14 +12,14 @@
             </div>
             
             <div class="columns eight">
-	            <h4>Edit department &mdash; <?php echo $admin->department_info($_GET['department'], 'name'); ?></h4>
+	            <h4>Editar departamento &mdash; <?php echo $admin->department_info($_GET['department'], 'name'); ?></h4>
 	            <span id="dptERR"></span>
 	            <form id="dptform">
 		            <input type="text" placeholder="Department Name" id="dept_new" value="<?php echo $admin->department_info($_GET['department'], 'name'); ?>" class="u-full-width">
-		            <button type="submit" name="update">Update Department</button>
+		            <button type="submit" name="update">Atualizar Departamento</button>
 		            <button id="delete_dpt" class="button button-blank" name="delete">Delete "<?php echo $admin->department_info($_GET['department'], 'name'); ?>"</button>
 		        </form>
-		        <div class="alert"><b>Please note:</b> Deleting a department will delete all tickets associated with it.</div>
+		        <div class="alert"><b>Observação: </b> a exclusão de um departamento excluirá todos os tickets associados a ele.</div>
 			</div>
         </div>
 	</div>
@@ -34,14 +34,14 @@
 		
 		<div class="eight columns settings-forms">		
 		  <?php if(isset($_GET['success'])) { echo '<div class="alert success">Your department has been deleted successfully.</div>'; }?>
-			<div class="accordionButton">Departments</div>
+			<div class="accordionButton">Departamentos</div>
 			<div class="accordionContent">
 				<table class="u-full-width departments-table">
 					<thead>
 						<tr>
 							<th>#</th>
-							<th>Name</th>
-							<th>Edit</th>
+							<th>Nome</th>
+							<th>Editar</th>
     					</tr>
   					</thead>
   					<tbody id="all_departments">
@@ -55,16 +55,16 @@
 					</div>
 					
 					<div class="columns two">
-						<button class="button u-full-width" type="submit" name="add_department">Add</button>
+						<button class="button u-full-width" type="submit" name="add_department">Adcionar</button>
 					</div>
 				</div>	
 			</form>	
 			</div>
 
-			<div class="accordionButton">Accessibility</div>
+			<div class="accordionButton">Acessibilidade</div>
 			<div class="accordionContent admin-accessibility">
 				<div class="row">
-					<div class="columns eight">Allow users to self delete account</div>
+					<div class="columns eight"> Permitir que os usuários excluam a conta automaticamente</div>
 					
 					<div class="columns four">
 						<input type="checkbox" name="allow_self_delete" id="allow_self_delete" class="toggler">
@@ -73,7 +73,7 @@
 				</div>
 				
 				<div class="row">
-					<div class="columns eight">Allow users to sign in</div>
+					<div class="columns eight">Permitir que os usuários façam login</div>
 					
 					<div class="columns four">
 						<input type="checkbox" name="allow_signin" id="allow_signin" class="toggler">
@@ -82,7 +82,7 @@
 				</div>
 				
 				<div class="row">
-					<div class="columns eight">Allow new users to register</div>
+					<div class="columns eight">Permitir que novos usuários se registrem </div>
 					
 					<div class="columns four">
 						<input type="checkbox" name="allow_register" id="allow_register" class="toggler">
@@ -91,7 +91,7 @@
 				</div>
 				
 				<div class="row">
-					<div class="columns eight">Enable spam accounts protection</div>
+					<div class="columns eight">Ativar proteção de contas de spam </div>
 					
 					<div class="columns four">
 						<input type="checkbox" name="enable_protection" id="enable_protection" class="toggler">
@@ -100,7 +100,7 @@
 				</div>
 			</div>
 			
-			<div class="accordionButton">About</div>
+			<div class="accordionButton">Sobre</div>
 			<div class="accordionContent">
 					<ul>
 						<li>Version 1.0</li>

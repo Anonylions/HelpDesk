@@ -16,7 +16,7 @@
             </div>
 
             <div class="columns eight admin-edit-user">
-                <h4>Edit user account &mdash; <?php echo $users->idtocolumn($_GET['user'], 'nick_name') ?></h4>
+                <h4>Editar conta de usuário &mdash; <?php echo $users->idtocolumn($_GET['user'], 'nick_name') ?></h4>
                 <span id="errors"></span>
                 <table class="u-full-width">
                     <thead>
@@ -29,7 +29,7 @@
 
                     <tbody>
                         <tr>
-                            <td>Unique ID</td>
+                            <td>ID único</td>
 
                             <td><?php echo $users->idtocolumn($_GET['user'], 'id'); ?></td>
                         </tr>
@@ -41,19 +41,19 @@
                         </tr>
 
                         <tr>
-                            <td>Email Address</td>
+                            <td>Endereço de e-mail</td>
 
                             <td><?php echo $users->idtocolumn($_GET['user'], 'email') ?></td>
                         </tr>
 
                         <tr>
-                            <td>Registered</td>
+                            <td>Registrado</td>
 
                             <td><?php echo $time->ago($users->idtocolumn($_GET['user'], 'sign_up_date')); ?></td>
                         </tr>
 
                         <tr>
-                            <td>Last Login</td>
+                            <td>Último Login </td>
 
                             <td><?php echo $time->ago($users->idtocolumn($_GET['user'], 'last_login')); ?></td>
                         </tr>
@@ -65,25 +65,25 @@
                         </tr>
 
                         <tr>
-                            <td>Number of Tickets Open</td>
+                            <td>Número de ingressos abertos</td>
 
                             <td><?php echo $admin->user_ticket_info($_GET['user'], 'open'); ?></td>
                         </tr>
 
                         <tr>
-                            <td>Number of Tickets Resolved</td>
+                            <td>Número de tickets resolvidos </td>
 
                             <td><?php echo $admin->user_ticket_info($_GET['user'], 'resolved'); ?></td>
                         </tr>
 
                         <tr>
-                            <td>Number of Tickets Unanswered</td>
+                            <td>Número de tíquetes sem resposta</td>
 
                             <td><?php echo $admin->user_ticket_info($_GET['user'], 'unanswered'); ?></td>
                         </tr>
                         
 						<tr>
-                            <td>Most Recent IP</td>
+                            <td>IP mais recente</td>
 
                             <td><?php echo $users->idtocolumn($_GET['user'], 'most_recent_ip') ?></td>
                         </tr>
@@ -100,38 +100,38 @@
                     </div>
 
                     <div class="columns two">
-                        <button id="admin_update_nickname" class="button button-blank u-full-width">Update</button>
+                        <button id="admin_update_nickname" class="button button-blank u-full-width">Atualizar</button>
                     </div>
                 </div>
 
                 <div class="row">
                     
                     <div class="columns four">
-                        <label for="email">Email Address</label>
+                        <label for="email">Endereço de e-mail</label>
                     </div>
                     <div class="columns six">
                         <input type="text" id="email" autocomplete="off" placeholder="Modify Nickname" value="<?php echo $users->idtocolumn($_GET['user'], 'email'); ?>" class="u-full-width">
                     </div>
 
                     <div class="columns two">
-                        <button id="admin_update_email" class="button button-blank u-full-width">Update</button>
+                        <button id="admin_update_email" class="button button-blank u-full-width">Atualizar</button>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="columns four">
-                        Actions
+                        Opções
                     </div>
 
                     <div class="columns four">
                         <?php
                             if($users->idtocolumn($_GET['user'], 'user_group') == 1) {
                         ?>
-                            <button class="button u-full-width" disabled>User is admin</button>
+                            <button class="button u-full-width" disabled>O usuário é administrador</button>
                         <?php
                             } else {
                         ?>
-                            <button class="button u-full-width" id="make_admin">Make Admin</button>
+                            <button class="button u-full-width" id="make_admin">Tornar Admin</button>
                         <?php
                             }
                         ?>
@@ -142,11 +142,11 @@
                         <?php
                             if($users->idtocolumn($_GET['user'], 'allowed') == 1) {
                         ?>
-                            <button class="button u-full-width" id="change_access">Access denied</button>
+                            <button class="button u-full-width" id="change_access">Acesso negado </button>
                         <?php
                             } else {
                         ?>
-                            <button class="button u-full-width" id="change_access">Don't Allow Access</button>
+                            <button class="button u-full-width" id="change_access">Não permitir acesso</button>
                         <?php
                             }
                         ?>
@@ -171,7 +171,7 @@
                         <tr>
                             <th>#</th>
                             <th>Nickname</th>
-                            <th>Email Address</th>
+                            <th>Endereço de email </th>
                             <th>.</th>
                         </tr>
                     </thead>

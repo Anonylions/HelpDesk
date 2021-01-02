@@ -13,10 +13,10 @@
 		<table class="u-full-width" id="update">
 			<thead>
 				<tr>
-					<th>Subject</th>
-					<th>Author</th>
-					<th>Last Reply</th>
-					<th>Department</th>
+					<th>Assunto</th>
+					<th>Autor</th>
+					<th>Última Resposta</th>
+					<th>Departamento</th>
     			</tr>
   			</thead>
   			<tbody>

@@ -25,7 +25,7 @@
 				<a href="user_management.php">
 					<div class="stat">
 						<h3><?php echo $admin->count_users(); ?></h3>
-						<h5>Users</h5>
+						<h5>Usuarios</h5>
 					</div>
 				</a>
 			</div>
@@ -34,7 +34,7 @@
 				<a href="site_management.php">
 					<div class="stat">
 						<h3><?php echo $admin->count_departments(); ?></h3>
-						<h5>Departments</h5>
+						<h5>Departamentos</h5>
 					</div>
 				</a>
 			</div>
@@ -46,39 +46,39 @@
 		  <thead>
 		  <tbody>
 		    <tr>
-		      <td>Number of Administrators</td>
+		      <td>Número de Administradores</td>
 		      <td><?php echo $admin->count_admins(); ?></td>
 		    </tr>
 		    <tr>
-		      <td>Number of Users</td>
+		      <td>Número de usuários</td>
 		      <td><?php echo $admin->count_users(); ?></td>
 		    </tr>
 		    <tr>
-		      <td>Total Number of Tickets</td>
+		      <td>Número total de Tickets</td>
 		      <td><?php echo $admin->count_tickets(); ?></td>
 		    </tr>
 			<tr>
-		      <td>Total Number of Unanswered Tickets</td>
+		      <td>Número total de não respondidos Tickets</td>
 		      <td><?php echo $admin->ticket_info_total('unanswered'); ?></td>
 		    </tr>
 			<tr>
-		      <td>Total Number of Open Tickets</td>
+		      <td>Número Total de Abertos Tickets</td>
 		      <td><?php echo $admin->ticket_info_total('open'); ?></td>
 		    </tr>
 			<tr>
-		      <td>Total Number of Resolved Tickets</td>
+		      <td>Número total de Tickets Resolvido</td>
 		      <td><?php echo $admin->ticket_info_total('resolved'); ?></td>
 		    </tr>
 			<tr>
-		      <td>Site Date</td>
+		      <td>Data Site</td>
 			  <td><?php echo date('d/m/Y'); ?></td>
 		    </tr>
 		    <tr>
-		      <td>Site Time</td>
+		      <td>Hora Site</td>
 			  <td><?php echo date('h:i:s a', time()); ?></td>
 		    </tr>
 		    <tr>
-		      <td>Site Timezone</td>
+		      <td>Fuso horário do site </td>
 			  <td><?php echo date_default_timezone_get(); ?></td>
 		    </tr>
 		  </tbody>
